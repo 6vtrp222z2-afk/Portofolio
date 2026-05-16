@@ -28,7 +28,7 @@
             color: #bdc3c7;
         }
         .container {
-            max-width: 300px;
+            max-width: 1000px;
             margin: auto;
             padding: 2rem;
         }
@@ -44,6 +44,7 @@
             margin-bottom: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden; /* Ensures child elements don't break layout */
         }
         .project-card h3 {
             margin-top: 0;
@@ -173,10 +174,12 @@
         <div class="project-card">
             <h3>Water Efficient Solar Panel Cleaning Mechanism</h3>
             <p class="tech-tags">AutoCAD 3D | Mechanical Stress & Fatigue Analysis</p>
+            
             <video class="portfolio-img" style="max-width: 300px; border-radius: 8px; margin-bottom: 1rem;" controls muted loop playsinline>
                 <source src="solar-cleaner.mp4.mp4.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            
             <ul>
                 <li>Designed an automated cleaning system optimized for dusty conditions, achieving a 98.1% water saving rate (&lt;0.5 L per cycle).</li>
                 <li>Modeled a motor-driven lead screw to translate a cleaning carriage with a nylon brush and five-nozzle water spray across a PV panel.</li>
